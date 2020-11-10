@@ -6,7 +6,7 @@ const app = new Vue({
     created() { },
     mounted() { },
     methods: {
-        addLine() {
+        addRow() {
             this.lines.push(this.lines.length + 1);
         }
     }

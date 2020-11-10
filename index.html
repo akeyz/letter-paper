@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Paper</title>
+    <script src="libs/vue.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="row" v-for="(item, index) in lines" :key="index">
+            <div class="line l1"></div>
+            <div class="line l2"></div>
+            <div class="line l3"></div>
+            <div class="line l4"></div>
+            
+            <input type="text">
+        </div>
+        <div class="action" @click="addLine()">新增一行</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
